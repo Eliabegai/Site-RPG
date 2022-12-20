@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RPG Maker </title>
+    <link rel="stylesheet" href=".css/style.css">
+</head>
+
+<body>
+
+    <!-- Início 05/05/2022 - 12:00-->
+    <!-- Criando o Personagem -->
+
+
+    <div class="total">
+
+        <h1> Adventure RPG Maker </h1>
+
+        <div>
+            <div>
+                <h1>Personagem</h1>
+                <!-- Definir Apelido Personagem -->
+                <p>Apelido:
+                    <input type="text" name="primeironome">
+                </p>
+            </div>
+            <!-- Definir Idade Personagem -->
+            <p>Idade:
+                <input type="text" name="idade"> anos
+            </p>
+            <!-- Definir o Gênero Personagem-->
+            <p>Gênero:<br>
+                <input type="radio" name="genero" value="h"> Masculino<br>
+                <input type="radio" name="genero" value="f"> Feminino<br>
+            </p>
+
+
+
+            <!-- Peso e Altura-->
+            <p>Altura: <input type="text" name="altura"> cm </p>
+            <p>Peso: <input type="text" name="peso"> kg </p>
+            <!--Definir o deslocamento-->
+            <p>Deslocamento
+                <input type="text" name="" id="">metros
+            </p>
+
+            <h4>Altura e Peso Aleatórios</h4>
+            <table border="2px">
+                <tr>
+                    <th>Raça</th>
+                    <th>Altura Base</th>
+                    <th>Modificador de Altura</th>
+                    <th>Peso Base</th>
+                    <th>Modificador de Peso</th>
+                </tr>
+                <tr>
+                    <td>Humano</td>
+                    <td>1,42 m</td>
+                    <td>+6d10 cm</td>
+                    <td>55 kg</td>
+                    <td>x (2d4/5) kg</td>
+                </tr>
+                <tr>
+                    <td>Anão, colina</td>
+                    <td>1,12 m</td>
+                    <td>+6d4 cm</td>
+                    <td>57 kg</td>
+                    <td>x (2d6/5) kg</td>
+                </tr>
+                <tr>
+                    <td>Anão, montanha</td>
+                    <td>1,22 m</td>
+                    <td>+6d4 cm</td>
+                    <td>65 kg</td>
+                    <td>x (2d6/5) kg</td>
+                </tr>
+                <tr>
+                    <td>Elfo, alto</td>
+                    <td>1,37 m</td>
+                    <td>+6d10 cm</td>
+                    <td>45 kg</td>
+                    <td>x (1d4/5) kg</td>
+                </tr>
+                <tr>
+                    <td>Elfo, floresta</td>
+                    <td>1,37 m</td>
+                    <td>+6d10 cm</td>
+                    <td>50 kg</td>
+                    <td>x (1d4/5) kg</td>
+                </tr>
+                <tr>
+                    <td>Elfo, drow</td>
+                    <td>1,32 m</td>
+                    <td>+6d6 cm</td>
+                    <td>48 kg</td>
+                    <td>x (1d6/5) kg</td>
+                </tr>
+                <tr>
+                    <td>Halfling</td>
+                    <td>0,78 m</td>
+                    <td>+6d4 cm</td>
+                    <td>18 kg</td>
+                    <td>x 1/5 kg</td>
+                </tr>
+                <tr>
+                    <td>Draconato</td>
+                    <td>1,67 m</td>
+                    <td>+6d8 cm</td>
+                    <td>87 kg</td>
+                    <td>x (2d6/5) kg</td>
+                </tr>
+                <tr>
+                    <td>Gnomo</td>
+                    <td>0,88 m</td>
+                    <td>+6d4 cm</td>
+                    <td>18 kg</td>
+                    <td>x 1/5 kg</td>
+                </tr>
+                <tr>
+                    <td>Meio-elfo</td>
+                    <td>1,45 m</td>
+                    <td>+6d8 cm</td>
+                    <td>55 kg</td>
+                    <td>x (2d4/5) kg</td>
+                </tr>
+                <tr>
+                    <td>Meio-orc</td>
+                    <td>1,47 m</td>
+                    <td>+6d10 cm</td>
+                    <td>70 kg</td>
+                    <td>x (2d6/5) kg</td>
+                </tr>
+                <tr>
+                    <td>Tiefling</td>
+                    <td>1,45 m</td>
+                    <td>+6d8 cm</td>
+                    <td>55 kg</td>
+                    <td>x (2d4/5) kg</td>
+                </tr>
+                
+
+            </table>
+
+            <h4>Deslocamento</h4>
+            <table border="3px">
+                <tr>
+                    <th>Raça</th>
+                    <th>Deslocamento</th>
+                </tr>
+                <tr>
+                    <td>Anão</td>
+                    <td>7,5 m</td>
+                </tr>
+                <tr>
+                    <td>Elfo</td>
+                    <td>9 m</td>
+                </tr>
+                <tr>
+                    <td>Halfling</td>
+                    <td>7,5 m</td>
+                </tr>
+                <tr>
+                    <td>Humano</td>
+                    <td>9 m</td>
+                </tr>
+                <tr>
+                    <td>Draconato</td>
+                    <td>9 m</td>
+                </tr>
+                <tr>
+                    <td>Gnomo</td>
+                    <td>7,5 m</td>
+                </tr>
+                <tr>
+                    <td>Meio-elfo</td>
+                    <td>9 m</td>
+                </tr>
+                <tr>
+                    <td>Meio-Orc</td>
+                    <td>9 m</td>
+                </tr>
+                <tr>
+                    <td>Tiefling</td>
+                    <td>9 m</td>
+                </tr>
+                
+            </table>
+
+
+
+        </div>
+        <div>
+
+            <form method="get"> <br>
+                <h1>Dados Personagem</h1>
+                <!-- Nível Personagem-->
+
+                <h3>Nível:
+                    <select name="nivel" id="nivel">
+                        <option id="1">1</option>
+                        <option id="2">2</option>
+                        <option id="3">3</option>
+                        <option id="4">4</option>
+                        <option id="5">5</option>
+                        <option id="6">6</option>
+                        <option id="7">7</option>
+                        <option id="8">8</option>
+                        <option id="9">9</option>
+                        <option id="10">10</option>
+                        <option id="11">11</option>
+                        <option id="12">12</option>
+                        <option id="13">13</option>
+                        <option id="14">14</option>
+                        <option id="15">15</option>
+                        <option id="16">16</option>
+                        <option id="17">17</option>
+                        <option id="18">18</option>
+                        <option id="19">19</option>
+                        <option id="20">20</option>
+
+                    </select>
+                </h3>
+
+            </form>
+            <form>
+                <!-- Escolha da Raça-->
+
+                <h3>Raça:
+                    <select name="raca" id="raca">
+                        <option id="selecione" selected>Selecione</option>
+                        <option id="anao">Anão</option>
+                        <option id="elfo">Elfo</option>
+                        <option id=halfling">Halfling</option>
+                        <option id="humano">Humano</option>
+                        <option id="draconato">Draconato</option>
+                        <option id="gnomo">Gnomo</option>
+                        <option id="meio_elfo">Meio-Elfo</option>
+                        <option id="meio_orc">Meio-Orc</option>
+                        <option id="tiefling">Tiefling</option>
+                        <option id="outro">Outro</option>
+
+                    </select>
+
+
+                    <h5>Outro: <input type="text"></h5>
+
+                </h3>
+                <!-- Escolha da Classe -->
+
+                <table>
+
+                    <h3>Classe:
+                        <select name="classe" id="classe">
+                            <option id="selecione" selected>Selecione</option>
+                            <option id="barbaro">Bárbaro</option>
+                            <option id="bardo">Bardo</option>
+                            <option id="bruxo">Bruxo</option>
+                            <option id="clerigo">Clérigo</option>
+                            <option id="druida">Druida</option>
+                            <option id="feiticeiro">Feiticeiro</option>
+                            <option id="guerreiro">Guerreiro</option>
+                            <option id="ladino">Ladino</option>
+                            <option id="mago">Mago</option>
+                            <option id="monge">Monge</option>
+                            <option id="paladino">Paladino</option>
+                            <option id="patrulheiro">Patrulheiro</option>
+
+
+                        </select>
+                    </h3>
+
+                    <h4>Subclasse:
+                        <select name="subclasse" id="subclasse">
+                            <option id="selecione" selected>Selecione</option>
+                            <option id="barbaro">Bárbaro</option>
+                            <option id="bardo">Bardo</option>
+                            <option id="bruxo">Bruxo</option>
+                            <option id="clerigo">Clérigo</option>
+                            <option id="druida">Druida</option>
+                            <option id="feiticeiro">Feiticeiro</option>
+                            <option id="guerreiro">Guerreiro</option>
+                            <option id="ladino">Ladino</option>
+                            <option id="mago">Mago</option>
+                            <option id="monge">Monge</option>
+                            <option id="paladino">Paladino</option>
+                            <option id="patrulheiro">Patrulheiro</option>
+
+                        </select>
+                    </h4>
+
+                    <h3>Tendências
+                        <select name="tendencia" id="tendencia">
+                            <option id="selecione" selected>Selecione</option>
+                            <option id="lealBom">Leal e Bom (LB)</option>
+                            <option id="neutroBom">Neutro e Bom (NB)</option>
+                            <option id="caoticoBom">Caótico e Bom (CB)</option>
+                            <option id="lealNeutro">Leal e Neutro (LN)</option>
+                            <option id="caoticoNeutro">Caótico e Neutro (CN)</option>
+                            <option id="lealMau">Leal e Mau (LM)</option>
+                            <option id="neutroMau">Neutro e Mau (NM)</option>
+                            <option id="caoticoMau">Caótico e Mau (CM)</option>
+                        </select>
+                    </h3>
+
+
+                    <h3>Idiomas<h3>
+
+                            <table>
+                                <tr>
+                                    <th><input type="checkbox"> Anão</th>
+                                    <th><input type="checkbox"> Comum</th>
+                                    <th><input type="checkbox"> Élfico</th>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox"> Gigante</th>
+                                    <th><input type="checkbox"> Gnômico</th>
+                                    <th><input type="checkbox"> Goblin</th>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox"> Halfling</th>
+                                    <th><input type="checkbox"> Orc</th>
+                                    <th><input type="checkbox"> Abissal</th>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox"> Celestial</th>
+                                    <th><input type="checkbox"> Dialeto Subterrâneo</th>
+                                    <th><input type="checkbox"> Dracônico</th>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox"> Infernal</th>
+                                    <th><input type="checkbox"> Primordial</th>
+                                    <th><input type="checkbox"> Silvestre</th>
+                                </tr>
+                                <tr>
+                                    <th><input type="checkbox"> Subcomum</th>
+                                </tr>
+                            </table>
+                            <!--
+                            <img class="idioma" src="img/idioma_padrao.png" width="350">
+
+                            <img class="idioma" src="img/idioma_exotico.png" width="300">
+                                
+                            <img class="idioma" src="img/idiomas.png" alt="">
+                                -->
+                            <table border="1px">
+                                <tr>
+                                    <th>Idioma</th>
+                                    <th>Falado por</th>
+                                    <th>Alfabeto</th>
+                                </tr>
+                                <tr>
+                                    <td>Anão</td>
+                                    <td>Anões</td>
+                                    <td>Anão</td>
+                                </tr>
+                                <tr>
+                                    <td>Comum</td>
+                                    <td>Humanos</td>
+                                    <td>Comum</td>
+                                </tr>
+                                <tr>
+                                    <td>Élfico</td>
+                                    <td>Elfos</td>
+                                    <td>Élfico</td>
+                                </tr>
+                                <tr>
+                                    <td>Gigante</td>
+                                    <td>Ogros, Gigantes</td>
+                                    <td>Anão</td>
+                                </tr>
+                                <tr>
+                                    <td>Gnõmico</td>
+                                    <td>Gnomos</td>
+                                    <td>Anão</td>
+                                </tr>
+                                <tr>
+                                    <td>Goblin</td>
+                                    <td>Goblinoides</td>
+                                    <td>Anão</td>
+                                </tr>
+                                <tr>
+                                    <td>Halfling</td>
+                                    <td>Halflings</td>
+                                    <td>Comum</td>
+                                </tr>
+                                <tr>
+                                    <td>Orc</td>
+                                    <td>Orcs</td>
+                                    <td>Anão</td>
+                                </tr>
+                                <tr>
+                                    <td>Abissal</td>
+                                    <td>Demônios</td>
+                                    <td>Infernal</td>
+                                </tr>
+                                <tr>
+                                    <td>Celestial</td>
+                                    <td>Celestiais</td>
+                                    <td>Celestial</td>
+                                </tr>
+                                <tr>
+                                    <td>Dialeto Subterrâneo</td>
+                                    <td>Devoradores de Mente, Observadores</td>
+                                    <td>*</td>
+                                </tr>
+                                <tr>
+                                    <td>Dracônico</td>
+                                    <td>Dragões, Draconatos</td>
+                                    <td>Dracônico</td>
+                                </tr>
+                                <tr>
+                                    <td>Infernal</td>
+                                    <td>Diabos</td>
+                                    <td>Infernal</td>
+                                </tr>
+                                <tr>
+                                    <td>Primordial</td>
+                                    <td>Elementais</td>
+                                    <td>Anão</td>
+                                </tr>
+                                <tr>
+                                    <td>Silvestre</td>
+                                    <td>Criaturas Feéricas</td>
+                                    <td>Élfico</td>
+                                </tr>
+                                <tr>
+                                    <td>Subcomum</td>
+                                    <td>Comerciantes do Subterrâneo</td>
+                                    <td>Élfico</td>
+                                </tr>
+                                <tr>
+                                    <td>*</td>
+                                    <td>*</td>
+                                    <td>*</td>
+                                </tr>
+
+                            </table>
+
+
+            </form>
+
+        </div>
+
+
+        <div>
+            <h1>Detalhes</h1>
+
+            <div class="atributos">
+                <h2>Atributos</h2>
+                <table class="atributos">
+                    <tr>
+                        <th>Força
+                            <input type="text" name="forca" id="forca" value="0">
+                            <input type="button" value="-1" id="menosForca">
+                            <input type="button" value="+1" id="maisForca">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Destreza
+                            <input type="text" name="destreza" id="destreza" value="0">
+                            <input type="button" value="-1" id="menosDestreza">
+                            <input type="button" value="+1" id="maisDestreza">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Constituição
+                            <input type="text" name="constituicao" id="constituicao" value="0">
+                            <input type="button" value="-1" id="menosConstituicao">
+                            <input type="button" value="+1" id="maisConstituicao">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Inteligência
+                            <input type="text" name="inteligencia" id="inteligencia" value="0">
+                            <input type="button" value="-1" id="menosInteligencia">
+                            <input type="button" value="+1" id="maisInteligencia">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Sabedoria
+                            <input type="text" name="sabedoria" id="sabedoria" value="0">
+                            <input type="button" value="-1" id="menosSabedoria">
+                            <input type="button" value="+1" id="maisSabedoria">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Carisma
+                            <input type="text" name="carisma" id="carisma" value="0">
+                            <input type="button" value="-1" id="menosCarisma">
+                            <input type="button" value="+1" id="maisCarisma">
+                        </th>
+                    </tr>
+
+                </table>
+
+
+            </div>
+
+            <div class="pericias">
+                <h2>Perícias</h2>
+
+                <table>
+                    <tr>
+                        <th><input type="checkbox"> Acrobacia (Des)</th>
+                        <th><input type="checkbox"> Adestrar Animais (Sab)</th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> Arcanismo (Int)</th>
+                        <th><input type="checkbox"> Atletismo (For)</th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> Atuação (Car)</th>
+                        <th><input type="checkbox"> Engannação (Car)</th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> Furtividade (Des)</th>
+                        <th><input type="checkbox"> História (Int)</th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> Intimidação (Car)</th>
+                        <th><input type="checkbox"> Intuição (Sab)</th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> Investigação (Int)</th>
+                        <th><input type="checkbox"> Medicina (Sab)</th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> Natureza (Int)</th>
+                        <th><input type="checkbox"> Percepção (Sab)</th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> Persuasão (Car)</th>
+                        <th><input type="checkbox"> Prestidigitação (Des)</th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"> Religião (Int)</th>
+                        <th><input type="checkbox"> Sobrevivência (Sab)</th>
+                    </tr>
+
+                </table>
+
+
+            </div>
+
+            <div>
+                <h2>Pontos de Vida
+                    <input type="number" class="number">
+                    <input type="button" value="-1" id="menosVida">
+                    <input type="button" value="+1" id="maisVida">
+                </h2>
+
+                <h4>Dado de Vida
+                    <select name="dados" id="">
+                        <option value="selecione" selected>1d4</option>
+                        <option value="selecione">1d6</option>
+                        <option value="selecione">1d8</option>
+                        <option value="selecione">1d10</option>
+                    </select>
+                </h4>
+
+                <table border="2px" style="max-width: 500px;">
+                    <h4>Tabela de Vida</h4>
+
+                    <tr>
+                        <th>Dado de Vida</th>
+                        <th>Pontos de Vida no 1º Nível</th>
+                        <th>Pontos de Vida nos Níveis Seguintes</th>
+                    </tr>
+                    <tr>
+                        <td>1d12 por nível de bárbaro</td>
+                        <td>12 + seu modificador de Constituição</td>
+                        <td>1d12 (ou 7)+ seu modificador de Constituição por nível de bárbaro após o 1º nível</td>
+                    </tr>
+                    <tr>
+                        <td>1d8 por nível de bardo</td>
+                        <td>8 + seu modificador de Constituição</td>
+                        <td>1d8 (ou 5)+ seu modificador de Constituição por nível de bardo após o 1º nível</td>
+                    </tr>
+                    <tr>
+                        <td>1d8 por nível de bruxo</td>
+                        <td>8 + seu modificador de Constituição</td>
+                        <td>1d8 (ou 5)+ seu modificador de Constituição por nível de bruxo após o 1º nível</td>
+                    </tr>
+                    <tr>
+                        <td>1d8 por nível de clérigo</td>
+                        <td>8 + seu modificador de Constituição</td>
+                        <td>1d8 (ou 5)+ seu modificador de Constituição por nível de clérigo após o 1º nível</td>
+                    </tr>
+                    <tr>
+                        <td>1d8 por nível de druida</td>
+                        <td>8 + seu modificador de Constituição</td>
+                        <td>1d8 (ou 5)+ seu modificador de Constituição por nível de druida após o 1º nível</td>
+                    </tr>
+                    <tr>
+                        <td>1d6 por nível de feiticeiro</td>
+                        <td>6 + seu modificador de Constituição</td>
+                        <td>1d6 (ou 4)+ seu modificador de Constituição por nível de feiticeiro após o 1º nível</td>
+                    </tr>
+                    <tr>
+                        <td>1d10 por nível de guerreiro</td>
+                        <td>10 + seu modificador de Constituição</td>
+                        <td>1d10 (ou 6)+ seu modificador de Constituição por nível de guerreiro após o 1º nível</td>
+                    </tr>
+                    <tr>
+                        <td>1d8 por nível de ladino</td>
+                        <td>8 + seu modificador de Constituição</td>
+                        <td>1d8 (ou 5)+ seu modificador de Constituição por nível de ladino após o 1º nível</td>
+                    </tr> 
+                    <tr>
+                        <td>1d6 por nível de mago</td>
+                        <td>6 + seu modificador de Constituição</td>
+                        <td>1d6 (ou 4)+ seu modificador de Constituição por nível de mago após o 1º nível</td>
+                    </tr>
+                    <tr>
+                        <td>1d8 por nível de monge</td>
+                        <td>8 + seu modificador de Constituição</td>
+                        <td>1d8 (ou 5)+ seu modificador de Constituição por nível de monge após o 1º nível</td>
+                    </tr>
+                    <tr>
+                        <td>1d10 por nível de paladino</td>
+                        <td>10 + seu modificador de Constituição</td>
+                        <td>1d10 (ou 6)+ seu modificador de Constituição por nível de paladino após o 1º nível</td>
+                    </tr>
+                    <tr>
+                        <td>1d10 por nível de patrulheiro</td>
+                        <td>10 + seu modificador de Constituição</td>
+                        <td>1d10 (ou 6)+ seu modificador de Constituição por nível de patrulheiro após o 1º nível</td>
+                    </tr>
+
+
+                </table>
+
+
+
+            </div>
+
+
+        </div>
+
+        <div>
+            <h1>Equipamentos</h1>
+
+            <div>
+                <h2>Riqueza</h2>
+
+                <table border="1px">
+                    <tr>
+                        <th>Classe</th>
+                        <th>Riqueza Inicial</th>
+                    </tr>
+
+                    <tr>
+                        <td>Bardo</td>
+                        <td>5d4 x 10po</td>
+                    </tr>
+                    <tr>
+                        <td>Bruxo</td>
+                        <td>4d4 x 10po</td>
+                    </tr>
+                    <tr>
+                        <td>Clérigo</td>
+                        <td>5d4 x 10po</td>
+                    </tr>
+                    <tr>
+                        <td>Druida</td>
+                        <td>2d4 x 10po</td>
+                    </tr>
+                    <tr>
+                        <td>Feiticeiro</td>
+                        <td>3d4 x 10po</td>
+                    </tr>
+                    <tr>
+                        <td>Guerreiro</td>
+                        <td>5d4 x 10po</td>
+                    </tr>
+                    <tr>
+                        <td>Ladino</td>
+                        <td>4d4 x 10po</td>
+                    </tr>
+                    <tr>
+                        <td>Mago</td>
+                        <td>4d4 x 10po</td>
+                    </tr>
+                    <tr>
+                        <td>Monge</td>
+                        <td>5d4 po</td>
+                    </tr>
+                    <tr>
+                        <td>Paladino</td>
+                        <td>5d4 x 10po</td>
+                    </tr>
+                    <tr>
+                        <td>Patrulheiro</td>
+                        <td>5d4 x 10po</td>
+                    </tr>
+
+
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
